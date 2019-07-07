@@ -1,0 +1,281 @@
+/* #region ---------------*-----------------------*/   
+   html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+    
+    * {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box}
+/* #endregion-------------------------------------*/
+/* #region----------------HTML--------------------*/
+    :root {
+        --ixalan-theme-lblue: #44D0D6;
+        --ixalan-theme-blue: #0E78E6;
+        --ixalan-theme-red: #D62710;
+        --ixalan-theme-yellow: #EFCC32;
+        --ixalan-theme-green: #2C8E34;
+        --ixalan-theme-white: #FFFFFF;
+        --ixalan-theme-gray: #636363;
+        --ixalan-theme-black:#434343;
+    }
+/* #endregion-------------------------------------*/
+/* #region ---------------Body--------------------*/
+   
+    body {
+        min-width: 100vw;
+        min-height: 100vh;
+        max-width: 100vw;
+    }
+    
+    #cardData{
+        text-align: center;
+        background:var(--ixalan-theme-black);
+        color:var(--ixalan-theme-white);
+        border-radius: 1rem;
+        padding: 1rem;
+        margin-top: 2rem;
+        position: absolute;
+        left: 50%;
+        margin-right: -50%;
+        display: flexbox; 
+        max-width: 50vw;
+        min-width: 50vw;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1rem;
+    }
+    #cardData,
+    h1{
+        color: var(--ixalan-theme-white) ;
+        text-align: center;
+        font-family: 'Noticia Text', serif;
+        font-size: 2rem;
+        font-weight: 700;
+        text-shadow: 0.15rem 0.15rem var(--ixalan-theme-black); 
+        -moz-text-shadow: 0.15rem 0.15rem var(--ixalan-theme-black);
+        -webkit-text-shadow: 0.15rem 0.15rem var(--ixalan-theme-black);  
+        padding-bottom: 1rem; 
+    }
+    #cardSearch{
+        font-size: 1rem;
+        display:flex;
+        justify-content: center;
+        flex-basis: content;
+        padding-left: 25%;
+        padding-right: 25%;
+        padding-top: 2rem;
+    }
+    #cardSearch,
+    form{
+        display:flex;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+    #cardSearch,
+    label{
+        font-size: 1.5rem;
+        margin-right:1rem;
+    }
+    #cardSearch,
+    select{
+        font-size: .75rem;
+    }
+    #cardNav{
+        display:flex;
+        justify-content: center;
+        flex-basis: content;
+        padding-left: 25%;
+        padding-right: 25%;
+        padding-top: 2rem;
+    }
+/* #endregion----------------------------------------*/
+/* #region----------------Header------------------*/
+    header h1 {
+        color: var(--ixalan-theme-blue) ;
+        text-align: center;
+        font-family: 'Noticia Text', serif;
+        font-size: 2rem;
+        font-weight: 700;
+        text-shadow: 0.15rem 0.15rem var(--ixalan-theme-black); 
+        -moz-text-shadow: 0.15rem 0.15rem var(--ixalan-theme-black);
+        -webkit-text-shadow: 0.15rem 0.15rem var(--ixalan-theme-black);
+    }
+    .page_top{
+        background-image: url(../images/header-sm.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 15vh;
+        max-height:15vh;
+        vertical-align: text-bottom;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+/* #endregion----------------------------------------*/    
+/* #region----------------Nav Bar-----------------*/
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        text-align: center;
+    }
+    
+    li {
+        float: left;
+    }
+    
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #111;
+    }
+/* #endregion ---------------------------------------*/    
+/* #region ---------------Footer------------------*/
+    footer{
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        width: 100vw;
+        background: var(--ixalan-theme-yellow);
+        overflow: hidden;
+    }
+/* #endregion ---------------------------------------*/
+/* #region ---------------Form--------------------*/
+    form {
+        color: var(--ixalan-theme-blue);
+        max-width: 50vw;
+        min-width: 50vw;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .form_field{
+        text-align: center;
+    }
+
+    form span {
+        font-size: 0.5rem;
+        color: var(--ixalan-theme-red);
+    }
+
+    form hr{
+        margin-top: 1rem;
+    }
+
+    fieldset{
+        margin: auto;
+        max-width: 75%;
+        }
+
+    label {
+        display: block;
+        padding: 0.5rem 0;
+    }
+/*#region-------------Progress Bar ------------------*/
+progress {
+    background: var(--ixalan-theme-gray);
+}
+progress::-webkit-progress-bar {
+    background: transparent;
+}  
+
+progress::-webkit-progress-value{
+    background: var(--ixalan-theme-blue);
+}
+
+
+
+
+/*#endregion-----------------------------------------*/
+    input{
+        border: 2px solid var(--ixalan-theme-gray);
+    }
+
+    input, 
+    textarea {
+        padding: 0.25rem;
+        display: block;
+        font-size: 1rem;
+        background-color: var(--ixalan-theme-white);
+        border: 2px solid var(--ixalan-theme-gray);
+        color: var(--ixalan-theme-black);
+        margin: 0.2rem auto 0 auto;
+        width:90%;
+    }
+    
+    textarea {
+        min-height: 13rem;
+    }
+    
+    input:required {
+        border: 2px solid var(--ixalan-theme-red);
+    }
+    
+    input:required:valid {
+        border-color: var(--ixalan-theme-gray);
+    }
+    
+    input:focus,
+    textarea:focus {
+        background-color: var(--ixalan-theme-white);
+    }
+    
+    .submitBtn {
+        margin: 1rem auto 0 auto;
+        border: none;
+        background-color: var(--ixalan-theme-red);
+        font-size: 1rem;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        margin-bottom: 3rem;
+        max-width: 25vw;
+    }
+    
+    .MFP_Container {
+        justify-content: left;
+        align-content: left;
+        display: flex;
+        margin: auto;
+    }
+    .MFP_Container input{
+        margin:1rem 0 0 0;
+    }
+    .MFP_Container label{
+        margin:auto 0 0 1rem;
+    }
+    .plane_drop {
+        background: var(--ixalan-theme-gray);
+        color: var(--text-white);
+        border: none;
+        width: 10rem;
+        height: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        outline: none;
+        padding: 0.3rem;
+        
+    }
+
+    .infoBox {
+        padding: 1rem;
+        border-radius: 0.7rem;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        border-color: var(--ixalan-theme-gray);
+        border-style: solid;
+        border-width: 0.2rem;
+    }
+    
+    .infoBox legend {
+        color: var(--ixalan-theme-blue);
+        padding: 0.4rem;
+        font-size: 1rem;
+    }
+ 
+/* #endregion -----------------------------------*/

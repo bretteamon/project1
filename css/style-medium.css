@@ -1,0 +1,11 @@
+@media only screen and (min-width: 540px){
+    .page_top{
+        background-image: url(../images/header-md.png);
+    }
+    header h1{
+        font-size: 3rem;
+    }
+    legend{
+        font-size: 1.5rem;
+    }
+}
