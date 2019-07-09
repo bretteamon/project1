@@ -25,6 +25,8 @@
 
 /*#endregion--------------------------------------------*/
 /*#region---------Cycle Thru Cards----------------------*/
+const mtg = require('mtgsdk');
+
 
 const getCard = () => {
   const xhr = new XMLHttpRequest();
