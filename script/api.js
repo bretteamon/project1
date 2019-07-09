@@ -40,6 +40,6 @@ const getCard = () => {
   };
   xhr.open('GET',urlComplete);
   xhr.send();
+};
 
-
-document.getElementById('creatureType').addEventListener('change',getCard());
+document.getElementById('creatureType').addEventListener('change',getCard);
