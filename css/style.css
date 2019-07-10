@@ -23,7 +23,7 @@ git /* #region ---------------*-----------------------*/
         max-width: 100vw;
     }
     
-    #cardData{
+    /* #cardData{
         text-align: center;
         background:var(--ixalan-theme-black);
         color:var(--ixalan-theme-white);
@@ -61,19 +61,19 @@ git /* #region ---------------*-----------------------*/
         padding-right: 25%;
         padding-top: 2rem;
     }
-    #cardSearch,
-    form{
+    form,
+    #cardSearch {
         display:flex;
         justify-content: center;
         padding-bottom: 1rem;
-    }
-    #cardSearch,
-    label{
+    } 
+    label,
+    #cardSearch{
         font-size: 1.5rem;
         margin-right:1rem;
     }
-    #cardSearch,
-    select{
+    select,
+    #cardSearch{
         font-size: .75rem;
     }
     #cardNav{
@@ -83,7 +83,7 @@ git /* #region ---------------*-----------------------*/
         padding-left: 25%;
         padding-right: 25%;
         padding-top: 2rem;
-    }
+    } */
 /* #endregion----------------------------------------*/
 /* #region----------------Header------------------*/
     header h1 {
