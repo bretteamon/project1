@@ -80,12 +80,12 @@ const xhrResponse = (x) => {
 //     return x;
 // }
 // };
-let previous = () =>{
-  x--;
-  xhrResponse(x);
-}
-const next = ()=> {
-  x++;
-  xhrResponse(x);
-};
+  const previous = () =>{
+    x--;
+    xhrResponse(x);
+  }
+  const next = ()=> {
+    x++;
+    xhrResponse(x);
+  };
 /*#endregion------------*/
