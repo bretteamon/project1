@@ -1,4 +1,4 @@
-git /* #region ---------------*-----------------------*/   
+/* #region ---------------*-----------------------*/   
    html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     
     * {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box}
@@ -16,15 +16,15 @@ git /* #region ---------------*-----------------------*/
     }
 /* #endregion-------------------------------------*/
 /* #region ---------------Body--------------------*/
-   
     body {
         min-width: 100vw;
         min-height: 100vh;
         max-width: 100vw;
+        overflow: hidden;
     }
-    
-    /* #cardData{
+     #cardData{
         text-align: center;
+        /* overflow: scroll; */
         background:var(--ixalan-theme-black);
         color:var(--ixalan-theme-white);
         border-radius: 1rem;
@@ -33,15 +33,22 @@ git /* #region ---------------*-----------------------*/
         position: absolute;
         left: 50%;
         margin-right: -50%;
-        display: flexbox; 
+        /* display: flexbox;  */
         max-width: 50vw;
         min-width: 50vw;
+        /* min-height: 500px; */
+        height: 400px;
         left: 50%;
         transform: translateX(-50%);
         font-size: 1rem;
+        justify-content: center;
     }
-    #cardData,
-    h1{
+    /* #cardData img{
+        max-width: 50vw;
+        min-width: 25vw;
+        max-height: 25vw;
+    } */
+    #cardData h1{
         color: var(--ixalan-theme-white) ;
         text-align: center;
         font-family: 'Noticia Text', serif;
@@ -61,19 +68,16 @@ git /* #region ---------------*-----------------------*/
         padding-right: 25%;
         padding-top: 2rem;
     }
-    form,
-    #cardSearch {
+    #cardSearch form{
         display:flex;
         justify-content: center;
         padding-bottom: 1rem;
     } 
-    label,
-    #cardSearch{
-        font-size: 1.5rem;
+    #cardSearch label{
+        font-size: 1rem;
         margin-right:1rem;
     }
-    select,
-    #cardSearch{
+    #cardSearch select{
         font-size: .75rem;
     }
     #cardNav{
@@ -83,7 +87,21 @@ git /* #region ---------------*-----------------------*/
         padding-left: 25%;
         padding-right: 25%;
         padding-top: 2rem;
-    } */
+        bottom :0;
+        position: absolute;
+    } 
+    #mainBody{
+        display: flexbox;
+        min-width: 100vw;   
+        max-width: 100vw;
+        /* overflow: scroll; */
+    }
+    #imgContainer{
+
+    }
+    .flex-container{
+        display: flex;
+    }
 /* #endregion----------------------------------------*/
 /* #region----------------Header------------------*/
     header h1 {

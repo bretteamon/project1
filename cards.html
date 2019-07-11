@@ -21,7 +21,8 @@
 					<li><a href="contact.html">Contact</a></li>
 					</ul>
 	</nav>
-	<section>
+	<section id="mainBody">
+		<section>
 		<nav id="cardSearch">
 			<form>
 				<label class="plane">Creature Type</label>
@@ -34,13 +35,19 @@
 					</select>
 			</form>
 		</nav>
+		</section>
+		<br>
 		<section id="cardData">
 			<h1 id="dinoName"></h1>
-			<img id="cardImage"/>
+			<section >
+				<img id="cardImage"/>
+			</section>
+			<section>
 			<nav id="cardNav">
 				<input type="button" onclick="previous()" value="<<">
 				<input type="button" onclick="next()" value=">>">
 			</nav>
+			</section>
 		</section>
 	</section>
 	<footer>&copy 2019 Ixalan Tourism Board</footer>
