@@ -1,67 +1,75 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Visit Ixalan-Contact Us</title>
-	<meta charset="utf-8" name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Noticia+Text:400,400i,700,700i&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../css/style-reset.css"/>
-	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
-	<link rel="stylesheet" type="text/css" href="../css/style-medium.css"/>	
-    <link rel="stylesheet" type="text/css" href="../css/style-large.css"/>
+    <title>Visit Ixalan-Contact Us</title>
+    <meta charset="utf-8" name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Noticia+Text:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/style-reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style-medium.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style-large.css" />
 </head>
+
 <body>
-	<header class="page_top">
-		<h1>Visit Ixalan</h1>
-	</header>
-	<nav> 
-			<ul class="main_menu">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="places.html">Places</a></li>
-					<li><a href="culture.html">Culture</a></li>
-					<li><a href="contact.html">Contact</a></li>
-			</ul>
+    <header class="page_top">
+        <h1>Visit Ixalan</h1>
+    </header>
+    <nav>
+        <ul class="main_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="places.html">Places</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cards.html">Cards</a></li>
+        </ul>
     </nav>
     <section class="form_field">
-        <form id="contact_form" >
+        <form id="contact_form">
             <fieldset class="infoBox">
                 <legend>Personal Information</legend>
-                    <label>First Name <span>(required)</span>
-                        <input type="text" pattern="[a-zA-Z]+" id="firstName" name="firstName" required placeholder="Huatli"/>
-                    </label>
-                    <label>Last Name <span>(required)</span>
-                        <input type="text" pattern="[a-zA-Z]+" id="lastName" name="lastName" placeholder="Dinosaur Knight" required/>
-                    </label>
-                    <label>Email <span>(required)</span>
-                         <input type="email" id="email" name="email" placeholder="Huatli@planeswalker.org"/>
-                    </label>
-                    <label>Phone <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="tel" name="tel" placeholder="###-###-####"/></label>
-                    <label>Date of Birth<input type="date" id="DOB" name="DOB"/></label>
-                    <label class="MFP_Container">
-                        <label>Male<input type="radio" id="M_Check" name="Male_Female" value="Male"/></label>
-                        <label>Female<input type="radio" id="F_Check" name="Male_Female" value="Female"/></label>
-                        <label>Planeswalker<input type="checkbox"  id="Planeswalker" name="Planeswalker" /></label>
-                    </label>
-                    <label class="plane">Plane</label>
-                        <select id="plane_Drop" class="plane_Drop">
-                            <option value="" disabled selected >Select a Plane</option>
-                            <option value="AM">Amonkhet</option>
-                            <option value="DOM">Dominaria‎</option>
-                            <option value="INN">Innistrad</option>
-                            <option value="IX">Ixalan</option>
-                            <option value="KAL">Kaladesh‎</option>
-                            <option value="RAV">Ravnica‎ </option>
-                            <option value="TAR">Tarkir‎</option>
-                            <option value="ZEN">Zenidakar</option>
-                        </select>
-                        <hr>
-                    <label>Comments<textarea id="comments" class="comments"></textarea></label>
+                <label>First Name <span>(required)</span>
+                    <input type="text" pattern="[a-zA-Z]+" id="firstName" name="firstName" required
+                        placeholder="Huatli" />
+                </label>
+                <label>Last Name <span>(required)</span>
+                    <input type="text" pattern="[a-zA-Z]+" id="lastName" name="lastName" placeholder="Dinosaur Knight"
+                        required />
+                </label>
+                <label>Email <span>(required)</span>
+                    <input type="email" id="email" name="email" placeholder="Huatli@planeswalker.org" />
+                </label>
+                <label>Phone <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="tel" name="tel"
+                        placeholder="###-###-####" /></label>
+                <label>Date of Birth<input type="date" id="DOB" name="DOB" /></label>
+                <label class="MFP_Container">
+                    <label>Male<input type="radio" id="M_Check" name="Male_Female" value="Male" /></label>
+                    <label>Female<input type="radio" id="F_Check" name="Male_Female" value="Female" /></label>
+                    <label>Planeswalker<input type="checkbox" id="Planeswalker" name="Planeswalker" /></label>
+                </label>
+                <label class="plane">Plane</label>
+                <select id="plane_Drop" class="plane_Drop">
+                    <option value="" disabled selected>Select a Plane</option>
+                    <option value="AM">Amonkhet</option>
+                    <option value="DOM">Dominaria‎</option>
+                    <option value="INN">Innistrad</option>
+                    <option value="IX">Ixalan</option>
+                    <option value="KAL">Kaladesh‎</option>
+                    <option value="RAV">Ravnica‎ </option>
+                    <option value="TAR">Tarkir‎</option>
+                    <option value="ZEN">Zenidakar</option>
+                </select>
+                <hr>
+                <label>Comments<textarea id="comments" class="comments"></textarea></label>
             </fieldset>
             <label for="form_progress">Form progress:
                 <progress id="form_progress" max="100" value=""></progress>
             </label>
-            <input type="submit" value="Contact" class="submitBtn"/>
-         </form>
-         </section>
-         <script src="../script/app.js"></script>
-    </body>
+            <input type="submit" value="Contact" class="submitBtn" />
+        </form>
+    </section>
+    <script src="../script/app.js"></script>
+</body>
+
 </html>

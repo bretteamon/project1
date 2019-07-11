@@ -1,48 +1,56 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Visit Ixalan</title>
-	<meta charset="utf-8" name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1">
+	<meta charset="utf-8" name="viewport"
+		content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Noticia+Text:400,400i,700,700i&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../css/style-reset.css"/>
-	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
-	<link rel="stylesheet" type="text/css" href="../css/style-medium.css"/>	
-	<link rel="stylesheet" type="text/css" href="../css/style-large.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/style-reset.css" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/style-medium.css" />
+	<link rel="stylesheet" type="text/css" href="../css/style-large.css" />
 </head>
+
 <body>
 	<header class="page_top">
 		<h1>Visit Ixalan</h1>
 	</header>
-	<nav> 
-			<ul class="main_menu">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="places.html">Places</a></li>
-					<li><a href="culture.html">Culture</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					</ul>
+	<nav>
+		<ul class="main_menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="places.html">Places</a></li>
+			<li><a href="culture.html">Culture</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="cards.html">Cards</a></li>
+		</ul>
 	</nav>
 	<section id="mainBody">
 		<section>
 		<nav id="cardSearch">
 			<form>
 				<label class="plane">Creature Type</label>
-					<select id="creatureType">
-						<option value="" disabled selected >Select a Creature Type</option>
-						<option value="type=Dinosaur">Dinosaur</option>
-						<option value="type=Merfolk">Merfolk</option>
-						<option value="type=Pirate">Pirate</option>
-						<option value="type=Vampire">Vampire</option>
-					</select>
+				<select id="creatureType">
+					<option value="" disabled selected>Select a Creature Type</option>
+					<option value="type=Dinosaur">Dinosaur</option>
+					<option value="type=Merfolk">Merfolk</option>
+					<option value="type=Pirate">Pirate</option>
+					<option value="type=Vampire">Vampire</option>
+				</select>
 			</form>
 		</nav>
 		</section>
 		<br>
 		<section id="cardData">
 			<h1 id="dinoName"></h1>
+<<<<<<< HEAD
 			<section >
 				<img id="cardImage"/>
 			</section>
 			<section>
+=======
+			<img id="cardImage" />
+>>>>>>> 434009dcb6dd8b29552991c6f05f16e07bde194a
 			<nav id="cardNav">
 				<input type="button" onclick="previous()" value="<<">
 				<input type="button" onclick="next()" value=">>">
@@ -52,6 +60,7 @@
 	</section>
 	<footer>&copy 2019 Ixalan Tourism Board</footer>
 	<script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
-    <script src="../script/api.js"></script>
+	<script src="../script/api.js"></script>
 </body>
+
 </html>

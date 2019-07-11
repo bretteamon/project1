@@ -8,4 +8,7 @@
     legend{
         font-size: 1.75rem;
     }
+    #cardSearch label{
+        font-size: 2rem;
+    }
 }
