@@ -23,7 +23,6 @@
 /*#region---------Cycle Thru Cards----------------------*/
 let results;
 let x = 0;
-let max;
 document.getElementById('creatureType').addEventListener('change',getCard = () => {
   const xhr = new XMLHttpRequest();
   const set = '?set=XLN&set=RIX&';
